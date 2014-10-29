@@ -18,13 +18,13 @@ module.exports = function(grunt) {
           grunt.log.errorlns(msg);
           break;
         case this.LOG_DEBUG:
-          grunt.verbose.write(msg);
+          grunt.verbose.writeln(msg);
           break;
         case this.LOG_INFO:
-          grunt.log.write(msg);
+          grunt.log.writeln(msg);
           break;
         case this.LOG_NOTICE:
-          grunt.log.write(msg);
+          grunt.log.writeln(msg);
           break;
         case this.LOG_SUCCESS:
           grunt.log.oklns(msg);
@@ -32,5 +32,4 @@ module.exports = function(grunt) {
       }
     }
   };
-
 };
