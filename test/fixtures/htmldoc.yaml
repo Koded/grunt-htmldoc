@@ -1,0 +1,16 @@
+publish: ../docs
+
+assets:
+  - src: ../converted-html/dist # original location within filesystem
+    dest: ./dist # where it should be put relative to publish folder
+  - src: ../converted-html/ui
+    dest: ./ui
+
+# Define where the templates that are used to build the styleguide are.
+templates: ./templates
+template_assets: sg-assets
+
+# The files that should be searched for HTMLdoc declarations
+files:
+  - category: Components
+    files:    ['./tests/fixtures/html/**/*']
